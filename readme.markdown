@@ -10,6 +10,7 @@ Most of this is straight forward, but we also need to port the XMonad.Contrib.Gn
 Included files
 --------------
 
+    Makefile
     xmonad.desktop
     xmonad.hs
     xmonad-mate.desktop
@@ -17,8 +18,11 @@ Included files
 Installation
 ------------
 
-Run the `install_xmonad.sh` script to install the appropriate packages, copy the config files into the right places, and recompile xmonad. This will clobber your existing settings, if any, so watch out. It might be a better idea to use the install script as a guide only, and do all the configuration manually.
+The default target of the included Makefile will install `xmonad` packages as necessary using `apt`, copy the configuration files to the correct places, and recompile the `xmonad` settings. This will clobber any existing settings you may have if they are in place. You might want to inspect the `Makefile` first.
 
+In any case, to install, just run
+
+    sudo make
 
 Thanks to
 ---------
