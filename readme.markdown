@@ -30,6 +30,17 @@ Basic Keyboard shortcuts
 
 Hit alt+space to cycle through layouts. Hit alt+tab to change window. Hit alt+1 ... alt+9 to switch to workspace 1 ... 9. Hit alt+shift+1 ... alt+shift+9 to send the active window to the specified workspace. Hit alt+shift+enter to open a new `mate_terminal`. Hit alt+p for the `run program` dialog. Hit `alt+shift+q` to logout. Have fun.
 
+More tweaks
+-----------
+
+### Hide desktop icons
+
+Despite the file manager `nautilus` being renamed to `caja`, and `gconftool-2` renamed to `mateconftool-2`, we can still issue an equivalent command to disable the desktop:
+
+    mateconftool-2 -s /apps/caja/preferences/show_desktop false --type boolean
+
+
+
 Thanks to
 ---------
 
