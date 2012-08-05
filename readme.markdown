@@ -18,6 +18,8 @@ Included files
 Installation
 ------------
 
+    git clone git://github.com/fcostin/xmonad_and_mate.git
+    cd xmonad_and_mate
     sudo make
 
 The default target of the included Makefile will install `xmonad` packages as necessary using `apt`, copy the configuration files to the correct places, and recompile the `xmonad` settings. This will clobber any existing settings you may have if they are in place. You might want to inspect the `Makefile` first.
