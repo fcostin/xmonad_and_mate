@@ -1,11 +1,11 @@
 Setting up xmonad + mate for Linux Mint 13 'Maya'
 =================================================
 
-Mate is a forked and rebranded version of gnome 2.
+Mate is a forked and rebranded version of gnome 2 distributed with Linux Mint 13 'Maya'.
 
 Here are the files for a simple mate + xmonad session, where we fire up a mate session but replace the windowmanager with xmonad.
 
-Most of this is straight forward, but we also need to port the XMonad.Contrib.Gnome module across to Mate. The ported version of this module is included inlined into the `xmonad.hs` config file included.
+Getting things to work under Mate seems mostly straight forward. The one painful step required is to port the XMonad.Contrib.Gnome module across to Mate, since Mate has renamed all of Gnome's internals to be called by new names. The ported version of this configuraiton module is included inlined into the `xmonad.hs` file included.
 
 Included files
 --------------
@@ -18,11 +18,10 @@ Included files
 Installation
 ------------
 
+    sudo make
+
 The default target of the included Makefile will install `xmonad` packages as necessary using `apt`, copy the configuration files to the correct places, and recompile the `xmonad` settings. This will clobber any existing settings you may have if they are in place. You might want to inspect the `Makefile` first.
 
-In any case, to install, just run
-
-    sudo make
 
 Basic Keyboard shortcuts
 ------------------------
