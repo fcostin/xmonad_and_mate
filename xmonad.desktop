@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Xmonad
+Exec=xmonad
+NoDisplay=true
+X-MATE-WMNAME=Xmonad
+X-MATE-Autostart-Phase=WindowManager
+X-MATE-Provides=windowmanager
+X-MATE-Autostart-Notify=false
