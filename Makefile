@@ -13,6 +13,7 @@ configure_mate_session:
 .PHONY: configure_mate_session
 
 configure_xmonad: install_xmonad
+	mkdir -p ~/.xmonad
 	cp xmonad.hs ~/.xmonad/xmonad.hs
 	xmonad --recompile
 .PHONY: configure_xmonad
