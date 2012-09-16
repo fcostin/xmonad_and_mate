@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=XMonad Mate
+Name=non-broken XMonad Mate
 Comment=xmonad with a hint of mint
 Exec=mate-session
 TryExec=mate-session

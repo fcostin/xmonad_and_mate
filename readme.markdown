@@ -15,6 +15,11 @@ Included files
     xmonad.hs
     xmonad-mate.desktop
 
+Issues
+------
+
+The `mateconf-2` step in the `Makefile` seems to be broken. Perhaps it doesn't work properly when run via `sudo`. The command seems to work fine when bashed directly into the terminal...
+
 Installation
 ------------
 
